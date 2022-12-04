@@ -1,0 +1,8 @@
+C:\Users\Дмитро\Desktop\TcpClient_Console.exe
+C:\Users\Дмитро\Desktop\TcpClient_Console.dll
+C:\Users\Дмитро\Desktop\TcpClient_Console.deps.json
+C:\Users\Дмитро\Desktop\TcpClient_Console.runtimeconfig.json
+C:\Users\Дмитро\Desktop\TcpClient_Console.pdb
+C:\Users\Дмитро\Desktop\MessagePack.dll
+C:\Users\Дмитро\Desktop\MessagePack.Annotations.dll
+C:\Users\Дмитро\Desktop\Microsoft.NET.StringTools.dll

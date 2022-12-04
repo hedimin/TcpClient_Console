@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient_Console", "TcpClient_Console\TcpClient_Console.csproj", "{DABFF4AF-3F17-4591-98B3-1065D93ACEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient_Console.IntegrationTests", "TcpClient_Console.IntegrationTests\TcpClient_Console.IntegrationTests.csproj", "{FEE51785-A345-4A5F-8107-88B664A59B5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DABFF4AF-3F17-4591-98B3-1065D93ACEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABFF4AF-3F17-4591-98B3-1065D93ACEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DABFF4AF-3F17-4591-98B3-1065D93ACEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DABFF4AF-3F17-4591-98B3-1065D93ACEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE51785-A345-4A5F-8107-88B664A59B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE51785-A345-4A5F-8107-88B664A59B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE51785-A345-4A5F-8107-88B664A59B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE51785-A345-4A5F-8107-88B664A59B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
