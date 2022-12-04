@@ -25,6 +25,7 @@ try
     //Writing data to the stream
     await stream.WriteAsync(sentData);
     Console.WriteLine("Message was sent to the server");
+    Console.ReadLine();
 }
 catch (Exception e)
 {
