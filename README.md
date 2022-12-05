@@ -1,13 +1,21 @@
 # TcpClient_Console
-This is a server that uses TCP/IP socket type. It takes data from the client and deserealizes it to the custom type Person, that has two fields: Name and Message. 
+This is a TCP/IP socket type client. It connects to the server via any IP and 8888 port:
 
-Server accepts any IP adress and 8888 port number:
 ```C#
-var tcpListener = new TcpListener(IPAddress.Any, 8888);
+using TcpClient tcpClient = new TcpClient();
+await tcpClient.ConnectAsync("127.1.199.250",8888);
 ```
-After running the server, it will message about waiting for incoming connections:
-![image](https://user-images.githubusercontent.com/112476754/205512558-497b3e9f-3c0e-448d-b16a-7f3191b7cce5.png)
+After starting and creating the client, programm informs about it and asks to enter user's name:
 
-Then, when server receives data, it is deserealized and processesed using Messagepack. As a result, writes into console two fields of object (Person type):
+![image](https://user-images.githubusercontent.com/112476754/205513921-5d915f23-c352-4b98-9d94-3bd0dd5a59a0.png)
 
-![image](https://user-images.githubusercontent.com/112476754/205513620-17ffcc3a-a330-4549-96d3-81844d43f2d2.png)
+and user's message, after what sends data to the server and informs about it:
+
+![image](https://user-images.githubusercontent.com/112476754/205514031-40957323-9040-4bb4-ace0-2fdc98f742b1.png)
+
+The data is serealized using Messagepack, where person - object of custom type Person, that is created after entered data from console:
+
+```C#
+var sentData = MessagePackSerializer.Serialize(person);
+```
+
