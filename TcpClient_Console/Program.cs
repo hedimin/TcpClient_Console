@@ -1,7 +1,7 @@
 ﻿using System.Net.Sockets;
 using MessagePack;
 
-//Starting client
+//Initializing and connecting client
 using TcpClient tcpClient = new TcpClient();
 await tcpClient.ConnectAsync("127.1.199.250",8888);
 

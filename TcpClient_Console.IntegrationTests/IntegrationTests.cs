@@ -14,6 +14,7 @@ public class Tests
     {
         //Arrange
         var tcpListener = new TcpListener(IPAddress.Any, 8888);
+        
         //Act
         try
         {
@@ -31,6 +32,7 @@ public class Tests
     {
         //Arrange
         var tcpListener = new TcpListener(IPAddress.Any, 8888);
+        
         //Act
         try
         {
@@ -51,8 +53,10 @@ public class Tests
         //Arrange
         var tom = new Person("Tom", "Tom's message");
         var tomBytes = MessagePackSerializer.Serialize(tom);
+        
         //Act
         var deserealizedTom = MessagePackSerializer.Deserialize<Person>(tomBytes);
+        
         //Assert
         Assert.That(tom.Name == deserealizedTom.Name && tom.Message == deserealizedTom.Message, Is.EqualTo(true));
     }
