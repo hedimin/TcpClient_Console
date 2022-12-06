@@ -1,6 +1,11 @@
 # TcpClient_Console
-This is a TCP/IP socket type client. It connects to the server via any IP and 8888 port:
+This is a TCP/IP socket type client.
 
+# Working principle
+![Діаграма без назви drawio](https://user-images.githubusercontent.com/112476754/205778038-2de736a7-ae84-4b1f-8efb-7bd89e62379a.png)
+
+# How it works?
+ It connects to the server via any IP and 8888 port:
 ```C#
 using TcpClient tcpClient = new TcpClient();
 await tcpClient.ConnectAsync("127.1.199.250",8888);
